@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import Logo from '../../components/Logo/Logo';
 
 const Navbar = () => {
   const links = <>
@@ -20,7 +21,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">FinTrack</a>
+        <Logo></Logo>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -28,8 +29,9 @@ const Navbar = () => {
           {links}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end space-x-4">
+        <Link to={'/login'} className="btn">Login</Link>
+        <Link to={'/register'} className="btn">Register</Link>
       </div>
     </div>
   );
