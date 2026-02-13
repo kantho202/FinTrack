@@ -4,6 +4,9 @@ import Home from "../pages/Home/Home/Home";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import AuthLayout from "../layouts/AuthLayout";
+import TransactionManagement from "../pages/Transaction Management/TransactionManagement";
+import CategoryManagement from "../pages/Category Management/CategoryManagement";
+import FinancialDashboard from "../pages/Dashboard/FinancialDashboard";
 
 export const router = createBrowserRouter([
     {
@@ -12,8 +15,16 @@ export const router = createBrowserRouter([
         children:[
             {
                 index:true,
-                Component:Home
+                element:<TransactionManagement></TransactionManagement>
             },
+            {
+                path:"/category",
+                element:<CategoryManagement></CategoryManagement>
+            },
+            {
+               path:'/dashboard',
+               element:<FinancialDashboard></FinancialDashboard> 
+            }
             
         ]
     },

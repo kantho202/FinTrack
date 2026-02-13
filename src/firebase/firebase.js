@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA5SE5a5ySoawAzDnuqWPjjMdFFzRpoAwA",
-  authDomain: "fintrack-34929.firebaseapp.com",
-  projectId: "fintrack-34929",
-  storageBucket: "fintrack-34929.firebasestorage.app",
-  messagingSenderId: "954534563512",
-  appId: "1:954534563512:web:0c06982aadc994cc176e4d"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

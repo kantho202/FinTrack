@@ -4,9 +4,9 @@ import Logo from '../../components/Logo/Logo';
 
 const Navbar = () => {
   const links = <>
-    <NavLink><li className='font-semibold text-base '>Home </li></NavLink>
-    <NavLink><li className='font-semibold text-base pl-8'>About </li></NavLink>
-    <NavLink><li className='font-semibold text-base pl-8'> Contact </li></NavLink>
+    <NavLink to={'/'}><li className='font-semibold text-base '>Transaction Management </li></NavLink>
+    <NavLink to={'/category'}><li className='font-semibold text-base pl-8'>Category Management </li></NavLink>
+    <NavLink to={'/dashboard'}><li className='font-semibold text-base pl-8'> Dashboard </li></NavLink>
   </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
