@@ -6,7 +6,7 @@ import { VscGraph } from 'react-icons/vsc';
 const Card = () => {
     return (
         <div>
-            
+            fdg
         </div>
     );
 };
