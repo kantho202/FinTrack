@@ -17,10 +17,7 @@ export const router = createBrowserRouter([
                 index:true,
                 element:<TransactionManagement></TransactionManagement>
             },
-            {
-                path:"/category",
-                element:<CategoryManagement></CategoryManagement>
-            },
+           
             {
                path:'/dashboard',
                element:<FinancialDashboard></FinancialDashboard> 
